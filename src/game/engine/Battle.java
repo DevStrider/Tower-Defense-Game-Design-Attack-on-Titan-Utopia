@@ -168,6 +168,7 @@ public class Battle {
 	}
 	
 	private void addTurnTitansToLane() {
+		if (lanes.isEmpty()) return;
 		Lane lane = lanes.poll();
 		PriorityQueue<Lane> temp = new PriorityQueue<>();
 		while(!lanes.isEmpty()) {
